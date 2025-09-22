@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="img/Graphicloads-Colorful-Long-Shadow-Html-tags.ico" type="image/x-icon">k
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <p><strong>Lembrando</strong>, que todas as vezes que você adicionar uma tag &lt;source&gt; no corpo da tag &lt;picture&gt;, ela deve ser enserida logo acima da ultima que já foi adicionada, ou seja, na ordem.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzier áudios em HTML5</p>
+    <!--<audio src="midia/Underground Academy - Hanu Dixit.mp3" autoplay controls></audio>Uma das maneiras de carregar audio no HTML5-->
+    <audio preload="metadata" controls> <!-- No Metadata ele carrega coisas básicas do audio, no auto ele só irá carregar o audio depois que ele baixar todo via WEB-->
+        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/mpeg">
+        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/ogg">
+        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/wav"><!-- Evite arquivos WAV, pois eles são muito pesados-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio,<a href="midia/Underground Academy - Hanu Dixit.mp3" download="Underground Academy - Hanu Dixit.mp3" type="audio/mpeg">baixe aqui o audio</a></p>
+    </audio>
+    <br>
+    <video controls autoplay>
+        <iframe width="560" height="315" src="https://player.vimeo.com/video/23394096?h=95b518d8ac&color=ffffff&portrait=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </video>
+</body>
+</html>
+ 
