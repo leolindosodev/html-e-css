@@ -11,6 +11,15 @@
         td, th{
             border: 1px solid black;
         }
+        tbody > tr:nth-child(even){
+            background-color: darkslategray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
         thead, tfoot{
             background-color: gray;
         }
@@ -21,6 +30,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -32,8 +42,8 @@
     <table>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>populacao</th>
+                <th scope="col">estado</th>
+                <th scope="col">populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -49,10 +59,46 @@
                 <td>sao paulo</td>
                 <td>5464654654654</td>
             </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td>5464654654654</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>total de gente</th>
+                <th scope="row">total de gente</th>
                 <td>000000</td>
             </tr>
         </tfoot>
