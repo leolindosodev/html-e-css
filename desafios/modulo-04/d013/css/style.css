@@ -7,5 +7,23 @@
 }
 
 body{
-    background-image: url(../img/fundo-madeira.jpg);/* color > image > position > repeat > size > attachment*/
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/fundo-madeira.jpg) no-repeat top center;/* color > image > position > repeat > size > attachment*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+main{
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background: url(../img/frame-iphone.png) center no-repeat;
 }
