@@ -14,7 +14,7 @@ html, body{
 body{
     width: 100vw;
     height: 100vh;
-    background: url(../img/fundo-madeira.jpg) no-repeat top center;/* color > image > position > repeat > size > attachment*/
+    background: url(../img/fundo-madeira.jpg) no-repeat top center; /*color > image > position > repeat > size > attachment*/
     background-size: cover;
     background-attachment: fixed;
 }
