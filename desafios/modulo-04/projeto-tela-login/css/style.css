@@ -18,7 +18,7 @@ Lilás: #5F2C82
 body, html{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to bottom, var(--cor02), var(--cor01));
+    background: linear-gradient(to bottom, var(--cor01), var(--cor02));
 }
 main{
     position: relative;
