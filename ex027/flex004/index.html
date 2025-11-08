@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .item{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .center{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .evenly{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .around{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .end{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .start{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .test{
+            height: 75px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            background-color: salmon;
+            margin-bottom: 20px;
+        }
+        .iten{
+            width: 100px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizando flex-flow: row nowrap;</h1>
+    <p>Levando em consideração que, a disposição dos itens utilizando <strong>justify-content</strong> se baseia pelo <strong>main-axis</strong></p>
+    <h2>justify-content: flex-start</h2>
+    <div class="start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: flex-end</h2>
+    <div class="end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: center</h2>
+    <div class="center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: space-between</h2>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: space-evenly</h2>
+    <div class="evenly">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: space-around</h2>
+    <div class="evenly">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: test</h2>
+    <div class="test">
+        <div class="iten">A</div>
+        <div class="iten">B</div>
+        <div class="iten">C</div>
+        <div class="iten">D</div>
+        <div class="iten">E</div>
+        <div class="iten">F</div>
+        <div class="iten">G</div>
+    </div>
+</body>
+</html>
