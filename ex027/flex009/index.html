@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: salmon;
+        }
+        .item{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;/* Será aplicado os 150px até onde couber os 150px, caso não de certo ele espremerá o conteudo. Lembrando que é de largura */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Um pouco maior que o anterior</div>
+        <div class="item">E</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ex mollitia libero sed at.</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
