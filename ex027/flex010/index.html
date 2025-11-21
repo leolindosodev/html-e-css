@@ -14,18 +14,27 @@
             background-color: lightseagreen;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
-            flex-shrink: 1; /* Ele só funciona dois valores "0" ou qualquer número que sejá positivo (Como se fosse um boolean). Onde 0 ele não permite encolher e 1 ele permite encolher*/
-            flex-grow: 1; /* 0 não permite crescer e qualquer número positivo permite o crescimento*/
-            /*Quando utilizamos flex-grow: 1; com "WRAP", o item que quebrou a linha tem a tendência de ocupar todo o espaço */
+            flex-basis: 200px;
+        }
+        #i1{
+            flex-shrink: 0;
+            flex-grow: 1;    
+        }
+        #i2{
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #i3{
+           flex-shrink: 3;
+           flex-grow: 1; 
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
     </div>
 </body>
 </html>
