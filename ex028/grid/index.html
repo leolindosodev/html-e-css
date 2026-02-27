@@ -9,21 +9,10 @@
             display: grid;
             height: 250px;
             border: 3px solid blue; 
-
-            /*grid-template-columns: auto auto auto;
+            /*grid-template-columns: auto auto auto; 
             grid-template-rows: auto auto auto; */
-            grid-template: repeat(3, auto) / repeat(3, auto);
-            gap: 10px;
-
-            /*Shorthand: align-items justify-items;*/
-            /*align-items: start;
-            justify-items: center; */
-            place-items: start center;
-
-            /*Shorthand: align-content justify-content;*/
-           /*align-content: space-between;
-            justify-content: end; */
-            place-content: space-between end;
+            grid-template: repeat(3, auto) / repeat(3, auto); /* Utilizei esse shorthand para diminuir a quantidade de linhas acima grid-template: grid-template-rows / grid-template-columns;*/ 
+            gap: 5px;
         }
         div.itens{
             border: 3px solid red;
@@ -41,7 +30,6 @@
         <div class="itens">E</div>
         <div class="itens">F</div>
         <div class="itens">G</div>
-        <div class="itens">H</div>
     </div>
 </body>
 </html>
