@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Layout na Prática</title>
+    <title>Grid Layout na Prática 05</title>
     <style>
         div.container{
             display: grid;
@@ -12,29 +12,27 @@
             grid-auto-flow: row;
             grid-auto-rows: 80px;
             grid-auto-columns: 120px;
-            gap: 10px; 
-            place-items: normal normal;
-            place-content: normal normal;
+            gap: 10px;
         }
         div.itens{
             border: 3px solid red;
             padding: 5px;
-
+        }
+        .box1{
+            grid-area: 1 / 1 / span 3 / 2; /*Lembrando que não fiz a pasta grid06 pois já estou usando o grid-area em todos os exemplos */
+            background-color: green;
+        }
+        .box2{
+            grid-area: 1 / 2 / span 2 / 3;
+            background-color: blue;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
-        <div class="itens">D</div>
-        <div class="itens">E</div>
-        <div class="itens">F</div>
-        <div class="itens">G</div>
-        <div class="itens">H</div>
-        <div class="itens">I</div>
-        <div class="itens">J</div>
+        <div class="itens box1">A</div>
+        <div class="itens box2">B</div>
+        <div class="itens box3">C</div>
     </div>
 </body>
 </html>
